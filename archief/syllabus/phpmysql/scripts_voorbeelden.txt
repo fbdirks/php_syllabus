@@ -1,7 +1,0 @@
-les1.php,1,Introductie
-les2.php,1,De 6 stappen in een PHP/MySQL script
-les3.php,1,Verstandig gebruik van foutmeldingen
-les4.php,1,Invoer van een formulier gebruiken om een query vorm te geven
-les5.php,1,Veilige invoer
-les6.php,1,Toevoegen van een record (INSERT query)
-les7.php,1,Wijzigen van een record (UPDATE query)
