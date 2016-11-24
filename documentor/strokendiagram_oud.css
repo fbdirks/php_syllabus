@@ -1,0 +1,77 @@
+body {
+font-family: verdana;
+}
+
+a:link {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #004080;
+}
+
+a:active {
+	text-decoration: none;
+	color: #004080;
+}
+
+#lijst {
+	font-family: arial;
+	font-size: 9 pt;
+}
+
+.tabelkopregel {
+	background-color: #8080FF;
+}
+
+table {
+	border: 1mm solid black;
+	margin-left: 20px;
+	padding: 0px;
+	spacing: 0px;
+	background-color: #cccccc;
+}
+
+td {
+
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 5px;
+
+}
+td.veldnaam {
+	background-color: #ffff99;
+}
+td.type {
+	font-weight: normal;
+	font-style: italic;
+}
+td.sleutel {
+	font-weight: normal;
+	background-color: #66ccff;
+}
+
+td.yesnull {
+	font-weight: normal;
+	background-color: #99cc99;
+}
+
+td.nonull {
+		font-weight: normal;
+		background-color: #ffcccc;
+}
+
+th {
+	font-size: 10pt;
+	
+}
+
+

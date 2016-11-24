@@ -1,0 +1,113 @@
+body  {
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	background-color: #62B6FB;
+}
+
+li
+{
+    list-style-position:inside;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+.uitkomst {
+	font-family: Courier;
+	font-weight: bold;
+}
+
+.commando {
+	font-family: Arial;
+	font-size: 8pt;
+	color: #FF0000;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+	display: inline;
+	margin: auto;
+	}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+	}
+
+.tekst {
+	text-align: center;
+}
+
+.main_text {
+	border: 1px solid DarkBlue;
+	border-radius: 15px;
+	background-color: White;
+	box-shadow: 10px 10px Grey;
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+
+}
+
+
+.opdrachten {
+	background-color: #F0E68C;
+	border: 1px solid Grey;
+	border-radius: 15px;
+	padding: 8px;
+}
+
+.liefhebbers {
+	color: #1E90FF;
+}
+
+table.query {
+	background-color: #D6D6D6;
+	width: 60%;
+	max-width: 60%;
+	/* font-family: courier-new; */
+	border-radius: 15px;
+	padding-left: 8px;
+	font-size: 10pt;
+}
+
+table.strokendiagram {
+	border: 1px solid black;
+	font-size: 10pt;
+}
+
+table.strokendiagram td {
+	border: 1px solid black;
+}
+

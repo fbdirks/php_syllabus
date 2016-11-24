@@ -1,0 +1,34 @@
+body {
+font-family: verdana;
+}
+
+a:link {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #004080;
+}
+
+a:active {
+	text-decoration: none;
+	color: #004080;
+}
+
+
+span.opletten {
+	color: blue;
+	background-color: Lavender;
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 8pt;
+	padding: 3px;
+}
+

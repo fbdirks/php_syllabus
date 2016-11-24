@@ -1,0 +1,48 @@
+div.main {
+	font-family: 'Cutive Mono', monospace;
+	width: 400px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 100px;
+	background-color:#CECCCC ;
+	border: 2px solid grey;
+	border-radius: 5px;
+	text-align: center;
+}
+
+div.toelichting {
+	font-family: 'Cutive Mono', monospace;
+	width: 400px;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+li {
+    list-style-position:inside;
+}
+
+
+div.useradd {
+	font-family: 'Cutive Mono', monospace;
+	width: 600px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 100px;
+	background-color:#CECCCC ;
+	border: 2px solid grey;
+	border-radius: 5px;
+	text-align: center;
+}
+
+div.useraddformulier {
+	font-family: 'Cutive Mono', monospace;
+	width: 500px;
+	padding: 10px;
+	margin: auto;
+	margin-top: 100px;
+	background-color:#CECCCC ;
+	border: 2px solid grey;
+	border-radius: 5px;
+	text-align: center;
+}

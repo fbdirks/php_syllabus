@@ -1,0 +1,120 @@
+body {
+font-family: verdana;
+}
+
+div.main {
+	background-color: #A8D3FF;
+	width: 70%;
+	margin: auto;
+	padding: 40px;
+	text-align: center;
+	border: 2px solid blue;
+	border-radius: 5px;
+}
+
+table {
+	width: 60%;
+	margin: auto;
+}
+a:link {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #004080;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #004080;
+}
+
+a:active {
+	text-decoration: none;
+	color: #004080;
+}
+
+
+.opletten {
+	color: white;
+	background-color: blue;
+	border: 1px solid red;
+	border-radius: 5px;
+	font-size: 8pt;
+}
+
+input {
+	
+	border-radius: 3px;
+	width: 35px;
+}
+
+
+.resultaat {
+	background-color: CornflowerBlue;
+	width: 75%;
+	margin: auto;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+
+.vraag {
+	font-family: verdana;
+	font-size: 14pt;
+	font-style: italic;
+}
+
+.nieuw {
+	background-color:#6495ED;
+	width : 60px;
+}
+
+.wijzig_help {
+	background-color: yellow;
+	width: 60px;
+	height: 20px;
+	font-family: arial;
+	font-size: 8pt;
+}
+
+.deactiveer_help {
+	background-color: red;
+	width: 60px;
+	height: 20px;
+	font-family: arial;
+	font-size: 8pt;
+}
+
+.bekijk_help {
+	background-color: #ffcc99 ;
+	width: 60px;
+	height: 20px;
+	font-family: arial;
+	font-size: 8pt;
+}
+
+.activeer {
+	background-color: #AAF497;
+}
+
+.wijzig {
+	background-color: yellow;
+}
+.deactiveer {
+	background-color: red;
+}
+
+.bekijk {
+	background-color: #ffcc99 ;
+}
+.invoer {
+	width: 250px;
+	background-color: #FDF9C1;
+}
+
+.rechts {
+	text-align: right;
+}

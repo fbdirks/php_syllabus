@@ -1,0 +1,124 @@
+* {
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+
+body  {
+
+	/* background-color: #62B6FB; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6393c1+0,cfe7fa+100 */
+	background: #6393c1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6393c1 0%, #cfe7fa 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #6393c1 0%,#cfe7fa 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #6393c1 0%,#cfe7fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6393c1', endColorstr='#cfe7fa',GradientType=0 ); /* IE6-9 */
+
+}
+
+li
+{
+    list-style-position:inside;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+.uitkomst {
+	font-family: Courier;
+	font-weight: bold;
+}
+
+.commando {
+	font-family: Arial;
+	font-size: 8pt;
+	color: #FF0000;
+}
+
+.opdrachten {
+	background-color: #F0E68C;
+	border: 1px solid Grey;
+	border-radius: 15px;
+	padding: 8px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+	display: inline;
+	margin: auto;
+	}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+	}
+
+.tekst {
+	text-align: center;
+}
+
+.main_text {
+	border: 1px solid DarkBlue;
+	border-radius: 15px;
+	background-color: White;
+	box-shadow: 10px 10px Grey;
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+
+div.codedisplay {
+	background-color: #D6D6D6;
+	width: 80%;
+	/* font-family: courier-new; */
+	border-width: 1px;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 11pt;
+	width: 80%;
+	/* text-align: center; */
+}
+
+
+
+.enkelelijn {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.enkelelijn td {
+	border-collapse: collapse;
+	border: 1px solid black;
+}

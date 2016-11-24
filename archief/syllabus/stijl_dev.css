@@ -1,0 +1,76 @@
+body  {
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	background-color: #BDE0FD;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+.uitkomst {
+	font-family: Courier;
+	font-weight: bold;
+}
+
+.commando {
+	font-family: Arial;
+	font-size: 8pt;
+	color: #FF0000;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+	display: inline;
+	margin: auto;
+	}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+	}
+
+.tekst {
+	text-align: center;
+}
+
+.main_text {
+	border: 1px solid DarkBlue;
+	border-radius: 15px;
+	background-color: White;
+	box-shadow: 10px 10px Grey;
+	padding: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+

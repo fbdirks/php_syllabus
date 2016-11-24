@@ -1,0 +1,36 @@
+1.php,1,Introductie en de basisopbouw van een PHP programma.
+2.php,1,De commando's print en echo, html in bedden in uitvoer.
+3.php,1,Strings en concatenatie.
+4.php,1,Eenvoudige rekenoperaties in PHP
+5.php,1,Werken met variabelen.
+6.php,1,Een paar syntax dingen
+spacer,unit 2
+7.php,2,Controlloops 1: IfThen/Elseif/IfThen
+8.php,3,Controlloops 2: Switch
+spacer,unit4
+9.php,4,Arrays (I)
+spacer,unit5
+10.php,5,Controlloops 3: herhaling met For
+spacer,unit6
+11.php,6,Controlloops 4: herhaling met While en DoWhile.
+spacer,unit7
+12.php,7,Functies 1: ingebouwde php functies.
+13.php,7,Functies 2: zelfgebouwde functies
+14.php,7,Functies 3: functies in aparte file 
+spacer,unit8
+15.php,8,Formulieren: standaard input elementen
+16.php,8,Formulieren: nieuwe HTML 5 formulier elementen
+17.php,X,Sessies: geef PHP een geheugen
+18.php,X,Hashes: versleutel wachtwoorden
+19.php,9,Object Georienteerd PHP : introductie
+20.php,9,OOP : basisconcepten
+21.php,9,OOP : Het voorbeeld
+22.php,9,OOP : Klasse definities
+23.php,9,OOP : Constructor en toegankelijkheid
+24.php,9,OOP : Overerving
+25.php,9,OOP : Abstracte klassen en Interfaces
+26.php,9,OOP : Voor- en nadelen van OOP
+27.php,9,PHP & MySQL (verwijspagina)
+28.php,X,Filefuncties 1 (lezen van een csv bestand)
+29.php,X,Filefuncties 2 (schrijven naar een csv bestand)
+30.php,X,Filefuncties 3 (slotopmerkingen filefuncties)

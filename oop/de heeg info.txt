@@ -1,0 +1,3 @@
+Op dit moment: fbdirks.nl PHP versie 4.4.0   //  mysql versie 4.0.15
+
+Na de verhuizing:  ???

@@ -1,0 +1,13 @@
+begin met een scenariotje:
+
+	* Jan Jansen logt in op de pagina.
+	* Hij kiest voor niveau B (sommen + - / * tussen 1 en 100)
+	* Hij krijgt som 1 voor zijn neus:   34 + 3 = ?
+	* Hij vult in 37 en klikt op OK. 
+	* Antwoord wordt als goed genoteerd in het geheugen 
+	* Nieuwe som:  56 -2 = ?
+	* Jan antwoord met 53.
+	* Antwoord wordt als fout genoteerd in het geheugen, INCLUSIEF de opgave en Jan's antwoord: "56-2=53(54)"
+	* enz. Jan maakt de komende 8 vragen geen fouten meer.
+	* na som 10 komt de slotpagina: jan heeft 90 punten gescoord
+	* onder water slaat het systeem in Jan's file op "17112016-14:39;90;B;"56-2=53(54)""
