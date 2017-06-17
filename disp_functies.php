@@ -18,12 +18,12 @@ function codeslot() {
 function toon_file($file,$ln="ja") {
 	codekop();
 	$language="php";
-	$geshi = new GeSHi($file, $language);
+	$geshi = new GeSHi($source, $language);
 	if ($ln=="ja"){
-		$geshi->set_line_style('list-style-position:outside; color:#77BBFF ');
+		$geshi->set_line_style('list-style-position:outside; color:#77BBFF; font-size: 8pt; ');
  		$geshi->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);	
 	} else {
-		$geshi->set_line_style('list-style-position:outside;');
+		$geshi->set_line_style('list-style-position:outside; color:#77BBFF; font-size: 8pt; ');
  		$geshi->enable_line_numbers(GESHI_NO_LINE_NUMBERS);
 	}
 	
@@ -48,6 +48,14 @@ function toon_taal($file,$taal) {
 
 function toon_code($code) {
 	$geshi = new GeSHi($code, 'php');
+	$code = $geshi->parse_code($geshi);
+	echo "<table class=\"query\" width=40% bgcolor=\"#ffff80\">";
+	echo "<tr><td>$code</td></tr>";
+	echo "</table>";
+}
+
+function toon_code_fragment($code,$taal) {
+	$geshi = new GeSHi($code, "$taal");
 	$code = $geshi->parse_code($geshi);
 	echo "<table class=\"query\" width=40% bgcolor=\"#ffff80\">";
 	echo "<tr><td>$code</td></tr>";

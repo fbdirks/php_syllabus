@@ -1,42 +1,19 @@
 <?php
+include "file_functies.php";
 
-session_start();
-// deze ingewikkelde voorwaarde kijkt of $_SESSION['ingelogd'] gezet en TRUE is.
-if (!((isset($_SESSION['ingelogd']))&& ($_SESSION['ingelogd']==true))) { 
-	
-	header("Location: file_inlog.php");
-	exit();
-} else {
-	$user = $_SESSION['usernaam'];
-	$voornaam = $_SESSION['voornaam'];
-	$tv = $_SESSION['tv'];
-	$achternaam = $_SESSION['achternaam'];
-	$email = $_SESSION['email'];
-	$rol = $_SESSION['rol'];
-	if ($rol>1) {
-		print "U bent niet gerechtigd deze pagina te gebruiken.";
-		print "Terug naar <a href=\"file_pagina1.php\">pagina 1</a>";
-		exit();
-	}
-} 
-
+kop();
 ?>
-
-<head>
-<title>FileFuncties PHP</title>
-<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-<link rel="stylesheet" href="file_stijl.css">
-</head>
-<body>
 	<div class="useradd">
 		<h2>User toevoegen:</h2>
 		<div class="useradd_formulier">
 			<form action="file_useradd.php" method="post">
 			Usernaam:<br>
 			<input type="text" name="usernaam"><br>
-			Voornaam - Tussenvoegsel - Achternaam:<br>
-			<input type="text" name="voornaam">
-			<input type="text" name="tv">
+			Voornaam<br> 
+			<input type="text" name="voornaam"><br>
+			Tussenvoegsel<br>
+			<input type="text" name="tv"><br>
+			Achternaam<br>
 			<input type="text" name="achternaam"> <br>
 			Email:<br>
 			<input type="email" name="email"><br>
@@ -44,7 +21,8 @@ if (!((isset($_SESSION['ingelogd']))&& ($_SESSION['ingelogd']==true))) {
 			<input type="password" name="ww1"><br>
 			<input type="password" name="ww2"><br>
 			Rol<br>
-			<input type="text" name="rol"><br>
+			<input type="radio" name="rol" value="5">user<br>
+			<input type="radio" name="rol" value="1">admin<br>
 			<input type="submit" name="toevoegen" value="toevoegen"><br>
 			<input type="reset" name="wissen" value="wissen">
 			</form>
@@ -108,5 +86,14 @@ if (isset($_POST['toevoegen'])) {
 				$teller++;
 			
 		}
+		print "</table>";
+		print "</div>";
 		fclose($lijst);
 ?>
+<?php
+
+voet();
+
+?>
+
+

@@ -23,8 +23,9 @@ print "</div>";
 print "<hr>";
 print "<table border=\"1\" width=\"100%\" cellpadding=\"25\"><tr><td bgcolor=\"#FFDC87\" >";
 
-include_once('../../geshi/geshi.php');
-
+//include_once('../../geshi/geshi.php');
+include_once('../../geshi.php');
+$language="php";
 $geshi = new GeSHi($source, $language);
 
 if (isset($_POST['start'])) {

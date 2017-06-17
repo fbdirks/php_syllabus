@@ -1,13 +1,24 @@
+/*
+Om niet steeds met dezelfde lettertypes te werken is in deze uitwerking gekozen
+voor het importeren van het 'Cutive Mono' lettertype van Google Fonts. 
+Zie hiervoor de linkregels in de kop, voorafgaand aan de link naar dit stylesheet.
+
+Zie dit ook als een pleidooi om van dit soort voorzieningen gebruik te maken.
+
+*/
+
 div.main {
 	font-family: 'Cutive Mono', monospace;
 	width: 400px;
 	padding: 10px;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 25px; 
+	margin-bottom: 200px;
 	background-color:#CECCCC ;
-	border: 2px solid grey;
-	border-radius: 5px;
+	border: 5px groove silver;
+	border-radius: 8px;
 	text-align: center;
+	box-shadow: 10px 10px grey;
 }
 
 div.toelichting {
@@ -30,8 +41,8 @@ div.useradd {
 	margin: auto;
 	margin-top: 100px;
 	background-color:#CECCCC ;
-	border: 2px solid grey;
-	border-radius: 5px;
+	border: 5px groove silver;
+	border-radius: 8px;
 	text-align: center;
 }
 
@@ -45,4 +56,18 @@ div.useraddformulier {
 	border: 2px solid grey;
 	border-radius: 5px;
 	text-align: center;
+}
+
+header {
+	font-family: 'Cutive Mono', monospace;
+	font-size: 18pt;
+	text-align: center;
+	
+}
+
+footer {
+	padding: 10px 0;
+	text-align: center;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 12pt;
 }

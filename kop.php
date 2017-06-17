@@ -121,14 +121,9 @@ function navigatie($pagina) {
     	print "<li><a href=\"$prev.php\">&lt;</a>";
     	for ($i=$van;$i<=$tot;$i++) {
     			if ($deze==$i) {
-    				$bnaam = $lines[$i]['bestandsnaam'];
-    				$bpara = $lines[$i]['paragraaf'];
-						print "<li><a class=\"active\" href=\"$bnaam\" alt=\"$bpara\">$i</a>";
+						print "<li><a class=\"active\" href=\"".$lines[$i]['bestandsnaam']."\" alt=\"$lines[$i][$paragraaf]\">$i</a>";
     			} else {
-    				$bnaam = $lines[$i]['bestandsnaam'];
-    				$bpara = $lines[$i]['paragraaf'];
-						// OUD: print "<li><a href=\"".$lines[$i]['bestandsnaam']."\" title=\"".$lines[$i]['paragraaf']."\">$i</a>";
-						print "<li><a href=\"$bnaam\" title=\"$bpara\">$i</a>";
+						print "<li><a href=\"".$lines[$i]['bestandsnaam']."\" title=\"".$lines[$i]['paragraaf']."\">$i</a>";
     			}
     		
     	}		

@@ -100,14 +100,15 @@ ul.pagination li a:hover:not(.active) {
 
 
 div.codedisplay {
-	background-color: #D6D6D6;
-	width: 80%;
-	/* font-family: courier-new; */
+	background-color: #D6D6D6; 
+	width: 90%;
+	/* font-family: courier-new;  */
+	font-size: 12pt;
 	border-width: 1px;
 	border-radius: 15px;
 	padding: 10px;
-	font-size: 11pt;
-	width: 80%;
+	overflow: auto;
+		
 	/* text-align: center; */
 }
 

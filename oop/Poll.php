@@ -4,7 +4,7 @@ class Poll {
 	// als je hier private ipv protected gebruikt zal de subklasse deze attributen niet kunnen zetten!!!
 	protected $vraag = "";
 	protected $antwoord1 = "" ;
-  	protected $antwoord2 = "" ;
+	protected $antwoord2 = "" ;
 	protected $antwoord3 = "" ;
 	protected $antwoord4 = "" ;
 	protected $gestemd1 = 0;
@@ -14,16 +14,15 @@ class Poll {
 	protected $aantalStemmen = 0;
 	protected $id = "" ;
 	
-
-    function __construct() {
-        	// eventuele initialisatie opdrachten
-	 }
+	function __construct() {
+       	// eventuele initialisatie opdrachten
+	}
 	 
-	 function zetVraag ($vraag) {
-			$this->vraag = $vraag;
-		}
+	function zetVraag ($vraag) {
+		$this->vraag = $vraag;
+	}
 
-	 function zetAntwoord($nr, $antwoord) {
+	function zetAntwoord($nr, $antwoord) {
 			if ($nr == 1) { $this->antwoord1 = $antwoord; }
 			if ($nr == 2) { $this->antwoord2 = $antwoord; }
 			if ($nr == 3) { $this->antwoord3 = $antwoord; }
@@ -34,9 +33,9 @@ class Poll {
 		$this->id = $id;
 	}
     
-    function getId() {
+	function getId() {
     	return $this->id;
-    }
+  }
 	 
 	function toon() {
 			// regel vormgeving via css (let op de id: poll
@@ -55,6 +54,7 @@ class Poll {
 	
 	function verwerkStem() {
 		if ((isset($_POST[Stemmen]))&&($_POST[id]==$this->id)) {
+			sleep(4);
 			$gestemd = false; # als $gestemd false blijft is er blanco gestemd en wordt het aantal stemmen niet verhoogd. [Keuze]
 			if ($_POST[antwoord] == 1) { 
 				$this->gestemd1++; 
@@ -120,11 +120,11 @@ class Poll {
 	} 
 		
 		
-		function test() {
-			print "<pre>";
-			print_r($this);
-			print "</pre>";
-		}
+	function test() {
+		print "<pre>";
+		print_r($this);
+		print "</pre>";
+	}
 		
 		
 	

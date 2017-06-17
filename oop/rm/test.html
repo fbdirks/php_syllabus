@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='jquery-1.10.2.js'></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  
+  $("#algemeen").click(function(){
+    $("a").hide();
+  });
+  
+  $("#algemeen2").click(function(){
+    $("a").show();
+  });
+  
+  $("#button_oud").click(function(){
+    $(".oud").hide();
+  });
+  
+  $("#button_oud2").click(function(){
+    $(".oud").show();
+  });
+  
+  
+  $("#button_nieuw").click(function(){
+    $("#nieuw").hide();
+  });
+  
+  $("#button_nieuw2").click(function(){
+    $("#nieuw").show();
+  });
+  
+  
+}); 
+
+</script>
+</head>
+<body>
+
+<h2>Een lijstje links</h2>
+<ul>
+<li><a href="a">Algemene link</a></li>
+<li><a class="oud" href="a">Algemene link in klasse 'oud'</a></li>
+<li><a class="oud" href="a">Algemene link in klasse 'oud'</a></li>
+<li><a class="oud" href="a">Algemene link in klasse 'oud'</a></li>
+<li><a id="nieuw" href="a">Algemene link als id 'nieuw'</a></li>
+</ul>
+<button id="algemeen">&lta&gt-</button>
+<button id="algemeen2">&lta&gt+</button>
+<button id="button_oud">oud-</button>
+<button id="button_oud2">oud+</button>
+<button id="button_nieuw">nieuw-</button>
+<button id="button_nieuw2">nieuw+</button> 
+</body>
+</html>

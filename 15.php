@@ -139,7 +139,7 @@ toon_file("v15_forms.php");
 
  <p>Voor de volledigheid hieronder ook de complete broncode van de hoofdpagina met het formulier:</p>
   <?php
-  toon_file("15_forms.php");
+  toon_file("v15_forms.html");
   ?>
   
 </p>

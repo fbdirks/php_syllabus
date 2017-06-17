@@ -54,7 +54,7 @@ class Pagina {
     
     function voet() {
     	print "\n<hr>\n";
-    	print "<h6 align=\"center\">&copy;".date("Y")." Ogol industries</h6>\n";
+    	print "<h6 align=\"center\">&copy; ".date("Y")." Ogol industries</h6>\n";
     	print "</body>\n";
     	print "</html>\n";
     }

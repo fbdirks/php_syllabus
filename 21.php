@@ -5,6 +5,7 @@ include "disp_functies.php";
 ?>
 
 <h2>21. Het voorbeeld: een eenvoudige meningspeiling (poll) in PHP</h2>
+<p><a href="oop/index.php" target="_blank">Hier</a> vind je de programma files van het complete voorbeeld. De link opent in een nieuw tabblad.</p>
 <p>
 We willen graag voor een website een programma schrijven waarmee we snel en gemakkelijk een meningspeiling kunnen opzetten. We willen er een echt systeem van maken, met andere woorden: het systeem moet vaker gebruikt kunnen worden met verschillende meningspeilingen.
 </p>

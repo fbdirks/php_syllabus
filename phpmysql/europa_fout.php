@@ -1,15 +1,16 @@
 <?php
 include "db_inc.php"; # inlezen van de database gegevens
-
+//$db_server="http://www.grinfo.nl"; # bewuste FOUT 
 // Stap 1 en 2:  connectie maken met mysql server en de juiste database
 // .. de gegevens (bijvoorbeeld $db_server) zijn gedefinieerd in de file db_inc.php.
 // .. op die manier hoef je die gegevens maar in 1 bestand te noteren.
 $mysql = mysqli_connect($db_server,$db_user, $db_password, $db_name) or die ("Mysql kon niet bereikt worden.");
 
 // Stap 3: query opbouwen
-$query = "SELECT naam,regio,area,population,gdp FROM bbc WHERE region = 'Europe'";
+$query = "SELECT name,region,area,population,gdp FROM bbc WHERE region = 'Europe'";
 
-print $query;
+print "De query is: $query";
+print "<br><br>";
 
 // Stap 4: query uitvoeren
 $resultaat = mysqli_query($mysql,$query) or die ("Query kon niet uitgevoerd worden: ".mysqli_error($mysql));

@@ -21,4 +21,6 @@ $MijnPoll->toon();
 $MijnPoll->verwerkStem();
 $MijnPoll->updatePoll();
 
+print "<a href=\"reset.php\">reset</a>";
+
 ?>

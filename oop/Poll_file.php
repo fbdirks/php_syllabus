@@ -34,6 +34,7 @@ class Poll_file extends Poll {
 		$regel = $regel.$this->gestemd3.";";
 		$regel = $regel.$this->gestemd4.";";
 		$regel = $regel.$this->aantalStemmen;
+		sleep(2); # afdoende vertraging?
 		fwrite($fp, $regel);
 		fclose($fp);
 		
