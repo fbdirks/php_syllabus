@@ -1,7 +1,5 @@
 <?php
 include "kop.php";
-include "disp_functies.php";
-
 ?>
 
 <h2>21. Het voorbeeld: een eenvoudige meningspeiling (poll) in PHP</h2>
@@ -30,5 +28,4 @@ De praktijk is meestal dat iemand die op deze manier gaat nadenken over een obje
 
 <?php
 include "voet.php";
-
 ?>

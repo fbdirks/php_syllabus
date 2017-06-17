@@ -48,6 +48,14 @@ div.demoform {
 	margin-bottom: 30px;
 }
 
+div.voorbeeldOutput {
+	background-color: #F5F5DC;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px;
+}
+
+
 span.knopje{
 	border-radius: 60px;
 	border: 1px solid black;

@@ -27,9 +27,15 @@ include "disp_functies.php";
 
 
 
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="v4_rekenen.hph","php"><code class="language-php"></code></pre>
+Dit is de output van deze code:<br><br>
+<div class="voorbeeldOutput" >
+	
 <?php
-toon_file("v4_rekenen.php");
+include "v4_rekenen.php";
 ?>
+</div>
 
 <?php
 include "voet.php";

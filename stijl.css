@@ -37,6 +37,10 @@ a:active {
 }
 
 
+div.voorbeeldOutput{
+	background-color: white;
+}
+
 .uitkomst {
 	font-family: Courier;
 	font-weight: bold;

@@ -1,7 +1,5 @@
 <?php
 include "kop.php";
-include "disp_functies.php";
-
 ?>
 
 <h2>9. Arrays</h2>

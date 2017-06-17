@@ -1,7 +1,5 @@
 <?php
 include "kop.php";
-include "disp_functies.php";
-
 ?>
 
 <h2>
@@ -89,5 +87,4 @@ tegenstelling tussen OOP en PP is zeer beslist niet totaal! Je hebt PP nodig bij
 </p>
 <?php
 include "voet.php";
-
 ?>

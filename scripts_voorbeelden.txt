@@ -1,7 +1,7 @@
-1.php,1,Introductie en de basisopbouw van een PHP programma.
-2.php,1,De commando's print en echo, html in bedden in uitvoer.
-3.php,1,Strings en concatenatie.
-4.php,1,Eenvoudige rekenoperaties in PHP
+pagina1.php,1,Introductie en de basisopbouw van een PHP programma.
+pagina2.php,1,De commando's print en echo, html in bedden in uitvoer.
+pagina3.php,1,Strings en concatenatie.
+pagina4.php,1,Eenvoudige rekenoperaties in PHP
 5.php,1,Werken met variabelen.
 6.php,1,Een paar syntax dingen
 spacer,unit 2
