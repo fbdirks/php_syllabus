@@ -22,9 +22,9 @@ Al deze dingen (en meer) vind je in de de documentatie. In de paragraaf <b>Descr
 <p><img src="examples.PNG"></p>
 
 <p>In het onderstaande voorbeeld zie je een paar (en zeker niet alle) mogelijkheden van een ander PHP commando, het Date commando.</p>
-<?php
-toon_file("v12_date.php");
-?>
+<pre data-src="v12_date.hph","php"><code class="language-php"></code></pre>
+En de output:
+<div class="voorbeeldOutput"><?php include 'v12_date.php';?></div>
 
 <?php
 include "voet.php";

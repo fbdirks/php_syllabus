@@ -15,14 +15,16 @@ include "disp_functies.php";
 </ul>
 Het eerste voorbeeld bevat de functie toon_lijst. Je ziet dat je die met allerlei arrays kunt gebruiken. Vooral de toepassing met $_POST is enorm handig bij het debuggen.
 </p>
-<?php
-toon_file("v13_functies.php");
-?>
+
+<pre data-src="v13_functies.hph","php"><code class="language-php"></code></pre>
+En de output:
+<div class="voorbeeldOutput"><?php include 'v13_functies.php';?></div>
+
 
 <p>De tweede voorbeeldfunctie hieronder verdubbelt de waarde van een parameter. Let vooral op de namen van de variabelen. In tegenstelling tot de eerste functie hierboven geeft deze functie wel een return waarde. </p>
-<?php
-toon_file("v13b_functies.php");
-?>
+<pre data-src="v13b_functies.hph","php"><code class="language-php"></code></pre>
+En de output:
+<div class="voorbeeldOutput"><?php include 'v13b_functies.php';?></div>
 
 
 <?php

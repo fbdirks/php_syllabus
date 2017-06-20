@@ -6,7 +6,7 @@ include "disp_functies.php";
 <h2>15. Een voorbeeld formulier</h2>
 <p>Hieronder zie je alle formulierelementen die HTML (4) kent. Als je op de knop versturen klikt <br />
 	wordt een PHP script gestart dat rapporteert welke waarden door de gebruiker zijn ingevoerd.</p>
-<form action="v15_forms.php" method="post">
+<form action="pagina15.php" method="post">
 	<table border="0">
 		<tr>
 			<td>Formulier</td>
@@ -133,14 +133,13 @@ include "disp_functies.php";
 	</table>
 
   <p>Dit is de simpele file die rapporteert hoe het bovenstaande formulier is ingevuld. Onthou dat print_r je beste vriend is als het gaat om het bekijken van de return waarden van een formulier.</p>
-<?php
-toon_file("v15_forms.php");
-?>
+<pre data-src="v15_forms.hph","php"><code class="language-php"></code></pre>
+En de output:
+<div class="voorbeeldOutput"><?php include 'v15_forms.php';?></div>
 
  <p>Voor de volledigheid hieronder ook de complete broncode van de hoofdpagina met het formulier:</p>
-  <?php
-  toon_file("v15_forms.html");
-  ?>
+<pre data-src="v15_forms.html","html"><code class="language-html"></code></pre>
+
   
 </p>
 
