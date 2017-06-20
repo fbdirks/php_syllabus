@@ -36,13 +36,15 @@ Maar leegmaken is niet hetzelfde als weggooien. De variabele bestaat nog steeds 
 <p>Een speciale vorm van variabelen zijn de <i>arrays</i>, dat zijn lijsten van variabelen die onder één naam in combinatie met een volgnummer opvraagbaar zijn. Deze buitengewoon nuttige array's worden op een andere plek uitgelegd.</p>
 
 
-
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="v5_variabelen.hph","php"><code class="language-php"></code></pre>
+Dit is de output van deze code:<br><br>
+<div class="voorbeeldOutput" >
 
 
 <?php
-toon_file("v5_variabelen.php");
+include "v5_variabelen.php";
 ?>
-
 <?php
 include "voet.php";
 

@@ -53,9 +53,10 @@ Het geniepige is dat je die drie dingen wel moet regelen maar dat het While comm
 Nu zal in ieder geval de regel 1 keer geprint worden ook al is de strafmaat 0. 
 
 </p>
-<?php
-toon_file("v11_while.php");
-?>
+
+<pre data-src="v11_while.hph","php"><code class="language-php"></code></pre>
+En de output:
+<div class="voorbeeldOutput"><?php include 'v11_while.php';?></div>
 
 <?php
 include "voet.php";

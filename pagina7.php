@@ -45,9 +45,13 @@ include "disp_functies.php";
 Je ziet dat je met AND (en OR en NOT) ook samengestelde voorwaarden kunt gebruiken. Denk altijd goed om de haakjes in zo'n geval!
 </p>
 <p>Een <b>Codeblok</b> wordt door PHP altijd afgegrensd door {  en } . Daarbinnen kan 1 commando staan, maar ook 2000 commando's!</p>
-<?php
-toon_file("v7_ifthen.php");
-?>
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="v7_ifthen.hph","php"><code class="language-php"></code></pre>
+Dit is de output van deze code:<br><br>
+<div class="voorbeeldOutput" >
+<?php include "v7_ifthen.php"; ?>
+</div>
+
 <?php
 include "voet.php";
 

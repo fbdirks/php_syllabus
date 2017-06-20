@@ -10,11 +10,13 @@ include "disp_functies.php";
 <p>Vergeet niet bij een switch iedere 'case' af te sluiten met een 'break' en vergeet niet een 'default' actie te definieren. </p>
 
 
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="v8_switch.hph","php"><code class="language-php"></code></pre>
+Dit is de output van deze code:<br><br>
+<div class="voorbeeldOutput" >
 
-
-<?php
-toon_file("v8_switch.php");
-?>
+<?php include "v8_switch.php"; ?>
+</div>
 <?php
 include "voet.php";
 

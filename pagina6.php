@@ -12,13 +12,14 @@ include "disp_functies.php";
 <p>Een commentaar-<b>regel</b> laat je voorafgaan door // . Alles na die tekens wordt door PHP genegeerd. Zo kun je dus eventueel ook een regel 'even' uitzetten.</p>
 <p>Soms wil je aan het eind van een regel een kleine commentaar opmerking plaatsen. Dat kan met // maar ook met # gevolgd door een opmerking.</p>
 <p>Vuistregel: wees niet te uitbundig, maar ook niet te zuinig met commentaar!</p>
-<?php
-toon_file("v6_syntax.php");
-?>
-<p>Hieronder een klein voorbeeld van een foutmelding op een verkeerde regel. Waar zit de fout?</p>
-<?php
-toon_file("v6b_syntax.php");
-?>
+
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="v6_syntax.hph","php"><code class="language-php"></code></pre>
+<p>Soms 'ziet' php de fout op een andere regel dan waar hij werkelijk zit. Kijk naar deze code:<br><br>
+
+<pre data-src="v6b_syntax.hph","php"><code class="language-php"></code></pre>
+<p><a href="v6b_syntax.php">Klik</a> op de link om de output van deze code te zien.</p>
+
 <?php
 include "voet.php";
 
