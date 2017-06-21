@@ -26,7 +26,7 @@ Dus:
 print 100 strafregels met de aangegeven tekst uit.</p>
 <p>Het verhogen of verlagen van een variabele met 1 komt zo vaak voor dat er een soort <i>steno</i> voor ontwikkeld is: $i++  betekent hetzelfde als $i=$i+1  en $i-- betekent hetzelfde als het verlagen van $i met 1. Deze 'steno' mag je overal in PHP gebruiken, niet alleen in het FOR commando.</p>
 <p>Bij debuggen van for loops moet je altijd kijken of de kloof tussen de startwaarde van $i en de eindwaarde van $i niet steeds groter wordt. Als dat zo is zal de loop niet stoppen.</p>
-<pre data-src="v10_for.hph","php"><code class="language-php"></code></pre>
+<pre data-src="v10_for.hph"><code class="language-php"></code></pre>
 <div class="voorbeeldOutput"><?php include 'v10_for.php';?></div>
 
 
