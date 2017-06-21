@@ -8,9 +8,31 @@ include "disp_functies.php";
 <p>Hoe nuttig is OOP? Iemand die 'even gauw' een applicatie moet schrijven voor een klein probleem heeft niets aan OOP. OOP heeft alleen zin als je een informatie probleem drastisch en grondig op wilt lossen. Je zult bij OOP in de aanlooptijd naar een werkende applicatie altijd veel tijd moeten stoppen in het nadenken over de architectuur van je objecten.
 De zaak ligt echter anders als je bij een applicatie gebruik wilt maken van werk dat anderen al gedaan hebben. Gebruik maken van klasse definities van anderen is in OOP een fluitje van een cent. En als die klasse definities een beetje volledig en goed gerijpt zijn neemt dat je een hoop werk uit handen. Het is altijd weer opvallend hoe de programma code die via events objecten met elkaar verknoopt in OOP-programma's soms verrassend simpel en overzichtelijk oogt. Dat soort programma's schrijf je snel en je kunt er ook snel de fouten uit halen.</p>
 
-<?php
-toon_fragment("26a.php","php");
-?>
+
+<pre><code class="language-php">
+include "Poll_db.php";
+
+$MijnPoll = new Poll_db();
+
+$MijnPoll->zetVraag("Je moet kiezen:");
+$nr = $MijnPoll->checkId(); 
+
+if (empty($nr)) {
+	// de poll bestaat nog niet: aanmaken dus!
+	$MijnPoll->zetAntwoord(1,"Amsterdam");
+	$MijnPoll->zetAntwoord(2,"Zwolle");
+	$MijnPoll->zetAntwoord(3,"Hasselt");
+	$MijnPoll->zetAntwoord(4,"Heerde");
+	$MijnPoll->maakPoll();
+} else {
+	// de poll bestaat: ophalen dus!
+	$MijnPoll->haalOp($nr);
+}
+
+$MijnPoll->toon();  # op scherm zetten
+$MijnPoll->verwerkStem();  # stem verwerken (incl. resultatenknop!)
+$MijnPoll->updatePoll();  # gegevens in database aanpassen
+</code></pre>
 <p>Het bovenstaande code voorbeeld is een voorbeeld van de overzichtelijkheid van OOP-programma's. Alle complexiteit zit eigenlijk verborgen in de klasse definitie "Poll_db.php". Bovenstaande code doet niet anders dan een nieuw Poll object defini&euml;ren, kijken of de vraag die men stellen wil al voorkomt, zo ja onder welk nummer en dan worden alle gegevens opgehaald, zo nee: dan wordt de poll aangemaakt en opgeslagen in de database. En de laatste drie regels doen niets anders dan de poll op scherm zetten, een eventueel uitgebrachte stem te verwerken en die verwerking ook in de database te noteren.</p>
 <p>
 In een taal als Java is alles een object, inclusief het aanroepende programma. Dat brengt onder andere met zich mee dat bijna alles in Java, en dus ook het aanroepende programma, methoden en eigenschappen heeft die horen bij objecten in Java. De makers van Java hebben dat onder meer gebruikt voor het toevoegen van allerlei handige debug en rapportage handigheidjes. Denk aan een methode als .toString() die een object "printbaar" maakt. Zo goed als ieder object in Java kent die methode. Getalsobjecten (als integer en double) hebben op die manier allerlei ingebouwde functies die de getallen converteren naar andere typen of afronden. En zo kunnen we nog wel even doorgaan.

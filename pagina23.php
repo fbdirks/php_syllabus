@@ -9,20 +9,28 @@ include "disp_functies.php";
 <p>
 Gegeven de wereld waar OOP uit voortgekomen is (het ontwikkelen van grote applicaties) is het begrijpelijk te noemen dat in het denken rond OOP ingebakken zit dat eigenschappen en methoden van een object niet altijd vrij toegankelijk zijn voor andere programmacode. Stel je bijvoorbeeld voor dat je een User object maakt en dat de methode die je gebruikt bij het aanmaken van een concreet User object altijd controleert of het wachtwoord wel uit minimaal 8 tekens bestaat, een mix is van hoofd- en kleine letters en minstens &eacute;&eacute;n speciaal leesteken bevat. Pas als aan al die voorwaarden voldaan is kan $wachtwoord van een nieuw useraccount gevuld worden.</p>
 <p>Vervolgens schrijf een collega van je code die rechtstreeks op het wachtwoord veld aangrijpt (zoiets: $MijnUser->wachtwoord = "12345";). Daarmee passeert hij de vormcheck. Zoiets wil je per design voorkomen. Dat doe je door het $wachtwoord veld de extra optie private mee te geven bij de definitie:</p>
-<?php
-toon_fragment("23a.php","php");
-?>
+<pre><code class="language-php">class User {
+	Private $wachtwoord; 
+	Private  $email; 
+	Public $usernaam;
+
+	// enzovoorts
+
+}</code></pre>
 <p>Het gebruik van het toverwoord private zorgt ervoor dat uitsluitend de interne methodes van het object dit veld kunnen vullen. In die interne methodes zitten dan allerlei controles op de vorm van het wachtwoord. Als een eigenschap niet private maar public is, kan je er ook van buiten de klasse definitie op aangrijpen.</p>
 
 <p>Een interne methode kan een eigenschap benaderen of vullen door gebruik te maken van de aanduiding $this. $this verwijst altijd naar het huidige object. Dus als $MijnUser een object is van het type User en de klasse User een methode heeft met deze code:</p>
-<?php
-toon_fragment("23b.php","php");
-?>
+<pre><code class="language-php">function zetVoornaam($vn) {
+	$this->voornaam = $vn;
+}</code></pre>
+
 <p>zal je met deze opdracht: <b>$MijnUser->zetVoornaam("Jan");</b> de voornaam van $MijnUser vullen met "Jan".</p>
 <p>Een van de eerste dingen die programmeurs van objecten vaak doen als het gewenst is dat veel eigenschappen private blijven is het schrijven van methoden die deze variabelen kunnen zetten ('setters') of ophalen ('getters'). Het is dan natuurlijk wel zaak om in die methoden controlemechanismen zoals hierboven genoemd in te bouwen. Realiseer je goed dat als je een private eigenschap $wachtwoord beschermt met deze 'setter':</p>
-<?php
-toon_fragment("23c.php","php");
-?>
+<pre><code class="language-php">function setWachtwoord($ww) {
+	$this->wachtwoord = $ww;
+}</code></pre>
+
+
 <p>je natuurlijk het kind met het badwater weggooit.</p>
 
 
