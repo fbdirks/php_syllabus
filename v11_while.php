@@ -20,18 +20,5 @@ do {
 } while ($aantal < $strafmaat);  
 
 
-// een while loop die alleen maar stopt als het aantal seconden 33 is.
-// De meeste servers vinden deze code helemaal niet leuk en stoppen er dus ook soms voortijdig mee..
-
-$doorgaan = True;
-
-while($doorgaan) {
-	$s = Date("s");
-	if ($s==33) $doorgaan=False;
-}
-
-print "<br>Gestopt op de 33e seconde van deze minuut...";
-
-
 
 ?>

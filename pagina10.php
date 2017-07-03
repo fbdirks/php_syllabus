@@ -18,11 +18,10 @@ include "disp_functies.php";
 		<li>De mate waarin de variabele iedere loop verandert (bijvoorbeeld $i=$i+1)</li>
 	</ul></p>
 Dus:
-<pre>
+<pre><code class="language-php">
 	for ($i=1;$i<=100;$i=$i+1) {
 		print "$i Ik moet op tijd in de les komen. ";
-	}
-</pre>
+	}</code></pre>
 print 100 strafregels met de aangegeven tekst uit.</p>
 <p>Het verhogen of verlagen van een variabele met 1 komt zo vaak voor dat er een soort <i>steno</i> voor ontwikkeld is: $i++  betekent hetzelfde als $i=$i+1  en $i-- betekent hetzelfde als het verlagen van $i met 1. Deze 'steno' mag je overal in PHP gebruiken, niet alleen in het FOR commando.</p>
 <p>Bij debuggen van for loops moet je altijd kijken of de kloof tussen de startwaarde van $i en de eindwaarde van $i niet steeds groter wordt. Als dat zo is zal de loop niet stoppen.</p>

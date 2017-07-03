@@ -22,17 +22,18 @@ include "disp_functies.php";
 <br>
 Hoewel het mogelijk is om een applicatie te schrijven die de bestandsformaten van Excel of Word kan lezen, is het beter te doen om bijvoorbeeld een Excel file als <i>csv bestand</i> op te slaan en die in te lezen. 'CSV' betekent: 'comma seperated value'. Het is een normaal tekst bestand waarbij op iedere regel de regels uit een tabel staan, gescheiden door een af te spreken teken. Vaak is dat de ; of de ,  maar het zou bij wijde van spreken ook de ! kunnen zijn. Een csv bestand van het bovenstaande voorbeeld ziet er zo uit:
 <br><br>
-<?php
-toon_fragment("voorbeeld.csv","dos");
-?>
+<!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
+<pre data-src="voorbeeld.csv"><code class="language-csv">
+	
+</code>
+</pre>
+
+
 <br>
 Het 'scheidingsteken' is in dit geval de ;. Je kunt in Excel het scheidingsteken zelf kiezen. 
 </p>
 <p>PHP is goed in het regel voor regel inlezen van een dergelijk bestand (commando: <i>fgets()</i>. Er is zelfs een speciaal commando dat er van uit gaat dat een csv bestand regel voor regel ingeladen wordt: <i>filegetcsv</i>. Maar voordat van deze commando's gebruik gemaakt kan worden moet een bestand eerst geopend worden, als het ware 'aangemeld' worden bij PHP:
-<?php
-$code = "\$bestand = fopen('voorbeeld.csv','r');";
-toon_code($code);
-?>
+
 <br>
 Het commando fopen geeft een zg. 'handle', een variabele die voor PHP de link naar een bestand vormt. Bij alle bestandsfuncties moet opgegeven worden op welk bestand die functie toegepast gaat worden. Daarvoor gebruik je die 'handle'. Achter het open commando staat nog een enkele letter, in dit geval de 'r'. Dit geeft aan dat het bestand geopend moet worden om er uit te lezen (<b>r</b>ead). Een paar mogelijkheden zijn:
 <ul>
@@ -49,8 +50,9 @@ $bestand = fopen('voorbeeld.csv','r');
 $regel = 1;
 $alles = array();
 while ($rij = fgetcsv($bestand, 1000,';')) {
+	
 	$aantal = count($rij);
-	print "$aantal elementen op regel $i: ";
+	print "$aantal elementen op regel $regel: ";
 	for ($i=0;$i<$aantal;$i++) {
 		print $rij[$i];
 		print " - ";
@@ -62,10 +64,31 @@ while ($rij = fgetcsv($bestand, 1000,';')) {
 }
 
 fclose($bestand);
-print"<br>En de code:<br><br>";
-toon_file("28a.php","ja");
-
 ?>
+
+<br>En de code:<br><br>
+
+
+<pre><code class="language-php">$bestand = fopen('voorbeeld.csv','r');
+$regel = 1;
+$alles = array();
+while ($rij = fgetcsv($bestand, 1000,';')) {
+	$aantal = count($rij);
+	print "$aantal elementen op regel $regel: ";
+	for ($i=0;$i<$aantal;$i++) {
+		print $rij[$i];
+		print " - ";
+	}
+	print "<br>";
+	$alles[$regel]=$rij;
+	$regel++;
+	
+}
+
+fclose($bestand);</code></pre>
+
+
+
 <p>Op regel 1 wordt het bestand geopend voor 'lezen'. (NB: in dit programma wordt niet gecontroleerd of een bestand wel bestaat. Een niet bestaand bestand kun je niet openen om te lezen. Er volgt dan een foutmelding! Eventueel zul je die moeten afvangen!!). Op regel 4 wordt het commando fgetcsv aan het werk gezet. De 1000 geeft aan hoeveel tekens de regel maximaal mag hebben. 1000 is een veilige optie. De ";" geeft aan dat het scheidingsteken de ; is. fgetcsv splitst dan zelf de regel al in een aantal elementen die aan een array worden gekoppeld, in dit geval de array $rij.<br>
 De functie count($rij), een ingebouwde functie in PHP, telt het aantal elementen in $rij. Dat aantal wordt gebruikt om in een kleine lus al die gegevens te printen in regels 7 - 10.<br>
 Maar ook wordt de inhoud van een $rij toegevoegd aan de array $alles. De laatste drie regels laten, alleen maar om te overtuigen, zien dat in die array $alles inderdaad de hele array terecht is gekomen. Hun output staat hieronder:<br>
@@ -84,15 +107,16 @@ print "</pre>";
 	<h2>Opdracht 1: maak het inlogsysteem compleet</h2>
 	<p>Hier onder zie je 4 bestanden die bij elkaar een inlogsysteempje vormen. <b>File1.php</b> bevat niets dan het formulier. <b>File1_verwerking.php</b> bevat de (incomplete) code die usernaam en wachtwoord controleert door de userfile uit te lezen. <b>users.csv</b> is de userfile met twee users er in, <i>gast</i> met als gehasht wachtwoord (sha1!!) 'welkom', en <i>admin</i> met 'letmein' als wachtwoord. <b>File2.php</b> is de vervolgpagina voor als je correct inlogde.</p>
 	<p>De opdracht is: maak File1_verwerking.php af zodat deze users.csv inleest en correct controleert of wachtwoorden kloppen.</p>
+
 <?php
-toon_file ('file1.php');
+//toon_file ('file1.php');
 print"<br>";
-toon_file('file1_verwerking.php');
+//toon_file('file1_verwerking.php');
 print"<br>";
-toon_file('users.csv');
+//toon_file('users.csv');
 print"<br>";
-toon_file('file2.php');
-	?>
+//toon_file('file2.php');
+?>
 
 <h2>Opdracht 2</h2>
 <p>Schrijf een php pagina waarmee je users kunt toevoegen aan de userfile. Nu moet je dus schrijven naar <i>users.csv</i> en moet je een formulier maken dat je hierbij helpt.</p>

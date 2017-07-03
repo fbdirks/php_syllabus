@@ -70,8 +70,7 @@ En de output:
 
 <p>De tweede file controleert of er is ingelogd, zo ja, dan wordt er meteen uitgelogd. Dit is dus een soort php variant van de <a href="https://en.wikipedia.org/wiki/Useless_machine">'useless machine'</a>.</p>
 <pre data-src="v17_sessies2.hph","php"><code class="language-php"></code></pre>
-En de output:
-<div class="voorbeeldOutput"><?php include 'v17_sessies2.php';?></div>
+
 
 <p>De conclusie mag zijn dat met het session systeem PHP op een eenvoudige manier voorzien kan worden van een sessie-geheugen. Bij serieuze toepassingen is het verstandig om alle security details rondom sessies te kennen en ervoor te zorgen dat sessie niet door anderen misbruikt kunnen worden. </p>
 <?php
