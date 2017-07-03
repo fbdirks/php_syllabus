@@ -1,0 +1,19 @@
+<?php
+include "db_inc.php";
+if (!isset($_POST[\'actie\'])) {
+	// dingen die gedaan moeten worden als NIET op de knop is gedrukt
+?>
+		<form action="formulier.php" method="post">
+			<table>
+				<tr>
+					<td>Welk land?</td><td><input type="text" name="land"></td>
+				</tr>
+				<tr>
+					<td></td><td><input type="submit" name="start" value="start"></td>
+				</tr>
+			</table>
+		</form>
+<?php
+	} else {
+		// dingen die gedaan moeten worden als WEL op de knop gedrukt is
+	}

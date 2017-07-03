@@ -22,13 +22,10 @@ include "kop.php";
 <br />
 <h3>Controleer invoer</h3>
 <p>Misschien heb je in de database eisen gesteld aan gegevens: een veld mag niet leeg zijn, een ander veld mag alleen maar cijfers bevatten en een volgend veld mag maar hooguit 60 tekens bevatten. Vertaal dat soort eisen ook in controles. Zorg ervoor dat als gebruikersinvoer niet door deze controle heen komt de query die met de gebruikersinvoer uitgevoerd moet gaan worden <em>niet</em> uitgevoerd wordt. Een goede techniek is het werken met een vlag-variabele, bijvoorbeeld $doorgaan. Zet deze aan het begin van de controles op <em>true</em>. Als de invoer niet door een bepaalde controle heen komt wordt de vlag op <em>false</em> gezet en voordat de query wordt uitgevoerd wordt naar die vlagvariabele gekeken. Hier zie je een klein voorbeeld:</p>
-
-
-<?php
-$code = '
+<pre><code class="language-php">
 $doorgaan = true;
-if (!empty($_POST[\'name\'])) {
-	$name = $_POST[\'name\'];
+if (!empty($_POST['name'])) {
+	$name = $_POST['name'];
 } else {
 	$doorgaan = false;
 }
@@ -38,21 +35,14 @@ if ($doorgaan) {
 } else {
 	print "De gegevens kloppen niet. Voer ze opnieuw in";
 }
-';
-toon_code($code);
-?>
+</code></pre>
+
 
 <h3>'Escape' HTML codes </h3>
 <p>Een deel van de problemen die kunnen ontstaan door de invoer van HTML of javascript codes in invoervelden kun je voorkomen door invoer van gebruikers te filteren met het commando <em>mysqli_real_escape_string</em>. Dit commando vertaalt tekens als &lt; en &gt; in zulke codes dat je er geen werkende HTML tag door krijgt. Een gebruiker kan dus niet een werkende link naar malware in zijn usernaam op nemen om maar wat te noemen. Het commando heeft een mysql connectie nodig (stap 1). Dit is dus een code voorbeeld van een goede filtering:</p>
-<?php
-$code = '
-$mysql = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+<pre><code class="language-php">$mysql = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 $usernaam = mysqli_real_escape_string($mysql,$_POST[\'usernaam\']);
-$bericht = mysqli_real_escape_string($mysql,$_POST[\'bericht\']);
-// enzovoorts
-';
-toon_code($code);
-?>
+$bericht = mysqli_real_escape_string($mysql,$_POST[\'bericht\']);  </code></pre>
 <br />
 <h3>Hou database gegevens buiten beeld</h3>
 <p>In de voorbeelden in deze lessen hebben we al steeds de database gegevens in een aparte file gestopt. Je kunt deze file een speciale naam geven en beschermen met een toegangsfiltering. </p>

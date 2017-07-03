@@ -1,0 +1,12 @@
+<form action="verwerk_wijziging.php" method="post">
+<!-- we noteren de oorspronkelijk ingetikte naam van het land extra op de volgende regel -->
+<input type="hidden" name="name_oud" value="<?php echo $name?>">
+	<table>
+		<tr><td>Land:</td><td><input type="text" name="name" value="<?php echo $name ?>" /></td></tr>
+		<tr><td>Region:</td><td><input type="text" name="region" value="<?php echo $region ?>" /></td></tr>
+		<tr><td>Area:</td><td><input type="text" name="area" value="<?php echo $area ?>" /></td></tr>
+		<tr><td>Population:</td><td><input type="text" name="population" value="<?php echo $population ?>" /></td></tr>
+		<tr><td>GDP:</td><td><input type="text" name="gdp" value="<?php echo $gdp ?>" /></td></tr>
+		<tr><td><input type="submit" value="wijzigen" name="wijzigen"></td><td></td></tr>
+	</table>
+</form>

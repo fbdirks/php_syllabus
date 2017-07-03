@@ -1,0 +1,1 @@
+<input type="text" name="region" value="<?php echo $region; ?>;">

@@ -26,97 +26,33 @@ include "kop.php";
 </ul>
 <p>Dit betekent dat we een formulier nodig hebben met 5 invul velden en dat we alleen hoeven controleren of <u>name</u> en <u>region</u> ingevuld zijn. Wel moeten we uitkijken met verkeerde invoer (zie hoofdstuk 4).</p>
 <h3>Een formulier</h3>
-<p>Een formulier is niet moeilijk. Dit is het ontwerp (de knop doet het op <i>deze</i> pagina niet! en daaronder staat de html code.</p>
-<form action="nieuw.php" method="post">
-<table>
+<p>Een formulier is niet moeilijk. Dit is het ontwerp (de knop doet het op <i>deze</i> pagina niet!) en daaronder staat de html code.</p>
+
+<table style="border: 1px solid black">
 <tr><td>Naam van het land:</td><td><input type="text" name="name"></td></tr>
 <tr><td>De regio van het land:</td><td><input type="text" name="region"></td></tr>
 <tr><td>De oppervlakte van het land:</td><td><input type="text" name="area"></td></tr>
 <tr><td>Het aantal inwoners van het land:</td><td><input type="text" name="population"></td></tr>
 <tr><td>Het bruto nationaal product van het land:</td><td><input type="text" name="gdp"></td></tr>
 <tr><td>Actie:</td><td><input type="button" name="actie" value="Toevoegen"></td></tr>
-</form>
-
-<?php
-	$code = '';
-	$geshi = new GeSHi($code, 'php');
-	$geshi->load_from_file("nieuw_formulier.php");
-	
-	$code = $geshi->parse_code($geshi);
-	echo "<table class=\"query\" width=40% bgcolor=\"#ffff80\">";
-	echo "<tr><td>$code</td></tr>";
-	echo "</table>";
-?>
+</table>
+<pre data-src="nieuw_formulier.hph"><code class="language-html"></code></pre>
 <p>De input elementen heb ik de namen van de velden gegeven. Dat levert minder verwarring bij de verwerking op, maar het is een keuze. Je bent hiertoe niet verplicht. De tabel om het formulier heen is puur alleen voor de opmaak. Ook dat kan eventueel anders.</p>
 <h3>De noodzakelijke query</h3>
 <p>Hier moeten we natuurlijk een INSERT INTO query gaan gebruiken. We kunnen het ons hier heel moeilijk maken door een aparte query te maken voor iedere denkbare combinatie van verplichte en niet verplichte velden. Maar laten we een knoop doorhakken en zeggen dat we 0 gaan invullen overal daar waar niet verplichte velden niet ingevuld zijn. De query die we dan nodig hebben is:</p>
-<?php
-$code = '
-<?php
-$query = "INSERT INTO bbc VALUES (\'$name\',\'$region\',$area,$population,$gdp)";
-?>
-';
-toon_code($code);
-?>
+<pre><code class="language-php">$query = "INSERT INTO bbc VALUES (\'$name\',\'$region\',$area,$population,$gdp)";  </code></pre>
+
+
+
 <p>We moeten dan wel zorgen voor de goede invulling van de waarden voor de variabelen achter VALUES. </p>
 <h3>De verwerkingspagina</h3>
 <p>Net als bij hoofdstuk 3 moeten we ook hier eerst het formulier neerzetten en dat later gaan verwerken. De code hier lijkt dus heel veel op de code daar. Alleen moeten we nu wel de variabelen name, region enzovoorts gaan vullen. De variabele $fout gebruiken we als 'vlag' om te bekijken of er wel voldoende is ingevuld. We zetten deze variabele eerst op true, maar als er echt iets niet goed is ingevuld en het invullen over moet zetten we de variabele op false:</p>
-<?php
-$code = '
-<?php
-include "db_inc.php";
-if (!isset($_POST[\'actie\'])) {
-	// dingen die gedaan moeten worden als NIET op de knop is gedrukt
-	// => Formulier tonen!!
-} else {
-	$doorgaan = true;
-	if (empty($_POST[\'name\'])) {
-		$doorgaan = false;
-	} else {
-		$name = $_POST[\'name\'];
-	}
-	if (empty($_POST[\'region\'])) {
-		$doorgaan = false;
-	} else {
-		$region = $_POST[\'region\'];
-	}
-	if (empty($_POST[\'area\'])) {
-		$area = 0; # we vullen 0 in als dit niet is ingevuld!
-	} else {
-		$area = $_POST[\'area\'];
-	}
-	if (empty($_POST[\'population\'])) {
-		$population = 0;
-	} else {
-		$population = $_POST[\'population\'];
-	}
-	if (empty($_POST[\'gdp\'])) {
-		$gdp = 0;
-	} else {
-		$gdp = $_POST[\'gdp\'];
-	}
-	
-	if ($doorgaan) {
-		$query = "INSERT INTO bbc VALUES (\'$name\',\'$region\',$area,$population,$gdp)"; # = STAP 3!!!
-		
-		// TODO: database handelingen (de 6 stappen)
-	} else {
-		print "Onvoldoende invoer! Het moet overnieuw! <a href=\"nieuw_land.php\">Klik hier</a>";
-	}
-	
-	
-}
-?>
-';
-toon_code($code);
-?>
+<pre data-src="toevoegen.hph"><code class="language-php"></code></pre>
+
 <p>In deze code wordt echt alleen getest of er wel iets is ingevuld in het formulier. De controle op gevaarlijke invoer, of een controle op de regionaam, op negatieve inwoneraantallen en meer van dat soort rare invoer zit hier nog niet in. Afhankelijk van de behoefte moet je dat soort controles soms wel inbouwen. Daar gaat best een hoop tijd inzitten!</p> 
 <h3>De 6 stappen toevoegen</h3>
 <p>Tot slot voegen we nog de inmiddels bekende 6 stappen toe aan het formulier (op de plek waar hierboven //TODO:  staat). Dit is voor deze pagina een simpele operatie omdat het meeste werk is gaan zitten in het formulier en het maken van de query. Het enige bijzondere is dat we even moeten controleren of de toevoeging wel gelukt is en waarom deze eventueel niet gelukt is:</p>
-<?php
-$code = '
-
-		
+<pre><code class="language-php">
 		// TODO: database handelingen (de 6 stappen)
 		#stap 1 en 2
 		$mysql = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
@@ -133,23 +69,12 @@ $code = '
 
 		#stap 6
 		mysqli_close($mysql);
-
-';
-toon_code($code);
-?>
+	
+</code></pre>
 <p>Foutmeldingen als de INSERT niet gelukt is zijn hierboven verplaatst naar stap 5 om te voorkomen dat met de <em>or die</em> opdracht het script er helemaal mee stopt. Op deze manier geven we gebruikers de kans om iets opnieuw in te vullen.</p>
 <h3>De complete code</h3>
 <p>Alles bij elkaar is dit het complete script:</p>
-<?php
-	$code = '';
-	$geshi = new GeSHi($code, 'php');
-	$geshi->load_from_file("nieuw_land.php");
-	
-	$code = $geshi->parse_code($geshi);
-	echo "<table class=\"query\" width=40% bgcolor=\"#ffff80\">";
-	echo "<tr><td>$code</td></tr>";
-	echo "</table>";
-?>
+<pre data-src="nieuw_land.hph"><code class="language-php"></code></pre>
 <p>Zoals eerder al opgemerkt kan het geen kwaad dit script nog meer controles en bescherming mee te geven. Daarover meer in een andere les.</p>
 <div class="opdrachten">
 <a name="opdrachten"><h3>Opdrachten 6</h3></a>

@@ -1,0 +1,44 @@
+<?php
+include "db_inc.php";
+if (!isset($_POST[\'actie\'])) {
+	// dingen die gedaan moeten worden als NIET op de knop is gedrukt
+	// => Formulier tonen!!
+} else {
+	$doorgaan = true;
+	if (empty($_POST[\'name\'])) {
+		$doorgaan = false;
+	} else {
+		$name = $_POST[\'name\'];
+	}
+	if (empty($_POST[\'region\'])) {
+		$doorgaan = false;
+	} else {
+		$region = $_POST[\'region\'];
+	}
+	if (empty($_POST[\'area\'])) {
+		$area = 0; # we vullen 0 in als dit niet is ingevuld!
+	} else {
+		$area = $_POST[\'area\'];
+	}
+	if (empty($_POST[\'population\'])) {
+		$population = 0;
+	} else {
+		$population = $_POST[\'population\'];
+	}
+	if (empty($_POST[\'gdp\'])) {
+		$gdp = 0;
+	} else {
+		$gdp = $_POST[\'gdp\'];
+	}
+	
+	if ($doorgaan) {
+		$query = "INSERT INTO bbc VALUES (\'$name\',\'$region\',$area,$population,$gdp)"; # = STAP 3!!!
+		
+		// TODO: database handelingen (de 6 stappen)
+	} else {
+		print "Onvoldoende invoer! Het moet overnieuw! <a href=\"nieuw_land.php\">Klik hier</a>";
+	}
+	
+	
+}
+?>
