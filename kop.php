@@ -6,7 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="../prism/prism-coy.css" rel="stylesheet" />
+<link href="/_lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/_lib/prism/prism-coy.css" rel="stylesheet" />
 <link href="jstijl.css" rel="stylesheet" />
 <meta charset="UTF-8">
 </head>

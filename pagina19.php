@@ -34,10 +34,10 @@ terecht (C, Visual Basic (en de rest), PHP om er maar een paar te noemen).</p>
 <p>Dit is een GWBASIC programma, nog met regelnummers, dat priemgetallen tussen [start] en [eind] uitrekent. De enige interactie wordt volledig door het programma gestuurd (regel 110 en 120). Het is dus een schoolvoorbeeld van <i>imperatief</i> programmeren:</p>
 
 <!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
-<pre data-src="v19a_basic.hph"><code class="language-batch"></code></pre>
+<pre data-src="hph\v19a_basic.hph"><code class="language-batch"></code></pre>
 
 <p>Hetzelfde programma, maar dan in php. Opvallend is dat er geen sprake meer is van regelnummers, dat de opbouw van de interactie (het 'formulier') redelijk wat code regels vraagt maar ook dat de gebruiker in feite degene is die de verwerking starten moet door het klikken op de submit knop. Een mooi voorbeeld van <i>procedureel/functioneel</i> programmeren:</p>
-<pre data-src="v19b_php.hph"><code class="language-php"></code></pre>
+<pre data-src="hph\v19b_php.hph"><code class="language-php"></code></pre>
 
 <p>Op het moment dat applicaties groter worden en het behouden van overzicht niet
 meer vanzelf gaat maar afgedwongen moet worden, wordt het toepassen van

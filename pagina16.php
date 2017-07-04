@@ -19,7 +19,7 @@ In het voorbeeld hieronder zie je hoe deze input elementen hun waarde teruggeven
 <p>Daarnaast zijn er een aantal formulier elementen toegevoegd. Bijvoorbeeld &lt;datalist&gt;. Hiermee kun je de invoer in een text veld beperken tot de waarden die je in de lijst opneemt. Als in de lijst bijvoorbeeld "Amsterdam", "Rotterdam" en "Den Haag" staan, kun je alleen die invullen.
 	</p>
 	<p>En dit is de file met de pagina functies:</p>
-<pre data-src="v16_form_new.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v16_form_new.hph","php"><code class="language-php"></code></pre>
 
 
 <?php

@@ -38,10 +38,10 @@ print "Op 28 september 2016 om 11:16 had dit bestand ('pagina18.php') een hash v
 
 <p>Een voorbeeld met sha1:</p>
 <!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
-<pre data-src="v18_hashesa.hph"><code class="language-php"></code></pre>
+<pre data-src="hph\v18_hashesa.hph"><code class="language-php"></code></pre>
 
 <p>Een voorbeeld met het modernere en beter password_hash():</p>
-<pre data-src="v18_hashesb.hph"><code class="language-php"></code></pre>
+<pre data-src="hph\v18_hashesb.hph"><code class="language-php"></code></pre>
 <p>SHA1 en MD5 zijn bekende en veel gebruikte systemen. Dit kan een veiligheidsrisico opleveren. Omdat mensen meestal niet zo'n zin hebben in het bedenken van veel en moeilijke wachtwoorden zijn bepaalde wachtwoorden altijd heel populair. Schoolvoorbeelden: "Test" en "letmein". Stel je voor dat een hacker de hand heeft weten te leggen op de database met usernamen. Deze bevat voor alle users ook de <i>hashes</i> van de wachtwoorden. Omdat je niet van de hash terug kunt werken naar het wachtwoord lijk je daar niets aan te hebben. Maar je kunt als hacker natuurlijk wel wachtwoorden gaan proberen. Begin dan met "geheim" "letmein" "1234" en "test". Bereken daar de hash van. </p>
 <p>Vervolgens ga je in de database zoeken naar wachtwoordhashes die hier gelijk aan zijn, en zo weet je in een mum van tijd welke users deze 4 wachtwoorden gebruiken. Zo'n tabel van verwachte of veel voorkomende hashes heet een "rainbowtable". Dit voorbeeld is supersimpel. Maar er zijn ook heel geavanceerde en grote rainbowtabellen.  Als op een site 'salten' gebruikt wordt hebben deze tabellen meteen veel minder zin. Tenzij het 'salt' bekend raakt natuurlijk... </p>
 <?php

@@ -47,25 +47,25 @@ Merk op dat je iedere speelster met een rugnummer zou kunnen vinden, maar ook me
 
 
 <p>Voorbeeld 1: simpele toewijzing en opvraging van array elementen:</p>
-<pre data-src="v9a_arrays.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v9a_arrays.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v9a_arrays.php';?></div>
 
 <p>Voorbeeld 2: als we willen weten wat er precies in een array zit (bijvoorbeeld $_POST!!) is het volgende commando super handig:</p>
-<pre data-src="v9b_arrays.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v9b_arrays.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v9b_arrays.php';?></div>
 
 <p>Voorbeeld 3: dit is de toewijzing van een <i>associatieve</i> array, en een toepassing van <i>foreach</i> om heel makkelijk door een array heen te ploegen. </p>
-<pre data-src="v9c_arrays.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v9c_arrays.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v9c_arrays.php';?></div>
 <p>Voorbeeld 4: er zijn veel array functies in PHP. Dit zijn een paar voorbeelden van sorteerfuncties (en een andere invulling van ForEach). Bovendien veranderen we hieronder een array, we halen er een element uit:</p>
-<pre data-src="v9d_arrays.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v9d_arrays.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v9d_arrays.php';?></div>
 <p>Opmerking: als je in een print regel een array-element van een associatieve array wilt opnemen moet je uitkijken met de aanhalingstekens. Het beste kun je de aanhalingstekens rondom een array index <i>in</i> een print/echo regel gewoon weglaten!</p>
-<pre data-src="v9e_arrays.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v9e_arrays.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v9e_arrays.php';?></div>
 <p>Slotopmerking: we komen later nog een keer op arrays terug, met name op multidimensionale arrays.</p>

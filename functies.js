@@ -1,15 +1,18 @@
 function kop() {
  	// bepalen eigen filenaam en volgende en vorige pagina.
  	var url = window.location.pathname;
-	var filename = url.substring(url.lastIndexOf('/')+1);
+ 	var filename = url.substring(url.lastIndexOf('/')+1);
+ 	if (filename=="") filename="index.php";
+	console.log(filename);
 	var nummer = filename.slice(6,8);
+	console.log(nummer);
 	var volgende = parseInt(nummer) + 1;
 	if (volgende>40) volgende=40;
 	var vorige = parseInt(nummer) - 1;
 	if (vorige<1) vorige = 1;
 	var volgendePagina = "pagina" + volgende.toString() +  ".php";
 	var vorigePagina = "pagina" + vorige.toString() +  ".php";
-	
+	console.log("Filenaam = " + filename);
 	if (filename=="index.php") {
 		volgendePagina = "pagina1.php";
 		vorigePagina = "index.php";
@@ -27,9 +30,9 @@ function kop() {
   var logo = "php2.jpg";
   var kopTekst = "<img src=\"" + logo + "\" />"+ " &nbsp;&nbsp;&nbsp;<i>aantekeningen</i>";
 
-  var knops = "<br><br><hr><span style=\"text-align: right\" title=\"vorige pagina\"><a href=\"" + vorigePagina + "\"><span class=\"knopje\">&lt;</span></a>";
-  knops += " <a href=\"index.php\" title=\"Index\"><span class=\"knopje\">*</span></a> ";
-  knops += "<a href=\""+ volgendePagina + "\" title=\"volgende pagina\"><span class=\"knopje\">&gt;</span></a><hr></span>";
+  var knops = "<br><br><span style=\"text-align: right\" title=\"vorige pagina\"><a href=\"" + vorigePagina + "\"><span class=\"glyphicon glyphicon-arrow-left\"></span></a>";
+  knops += " <a href=\"index.php\" title=\"Index\"><span class=\"glyphicon glyphicon-arrow-up\"></span></a> ";
+  knops += "<a href=\""+ volgendePagina + "\" title=\"volgende pagina\"><span class=\"glyphicon glyphicon-arrow-right\"></span></a></span>";
   kopTekst += knops;
 
   $('header').html(kopTekst);

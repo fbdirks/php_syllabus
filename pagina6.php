@@ -14,10 +14,10 @@ include "disp_functies.php";
 <p>Vuistregel: wees niet te uitbundig, maar ook niet te zuinig met commentaar!</p>
 
 <!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
-<pre data-src="v6_syntax.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v6_syntax.hph","php"><code class="language-php"></code></pre>
 <p>Soms 'ziet' php de fout op een andere regel dan waar hij werkelijk zit. Kijk naar deze code:<br><br>
 
-<pre data-src="v6b_syntax.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v6b_syntax.hph","php"><code class="language-php"></code></pre>
 <p><a href="v6b_syntax.php">Klik</a> op de link om de output van deze code te zien.</p>
 
 <?php

@@ -18,10 +18,10 @@ include "disp_functies.php";
 <h2>Het skelet van een php programma</h2>
 <p>Het skelet van een php programma ziet er zo uit:</p>
 
-<pre data-src="v1_skelet.hph"><code class="language-php"></code></pre>
+<pre data-src="hph\v1_skelet.hph"><code class="language-php"></code></pre>
 <p>De webserver zal na <b>&lt;?php</b> php aan het werk zetten met de programmaregels die duren tot de eerstvolgende <b>?&gt;</b>. Buiten dat blok mag html code staan. Je kunt in een php pagina php en html zo vaak als je maar wilt mixen.</p>
 
-<pre data-src="v1b_skelet.hph"><code class="language-php"></code></pre>
+<pre data-src="hph\v1b_skelet.hph"><code class="language-php"></code></pre>
 
 
 

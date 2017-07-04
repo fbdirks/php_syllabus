@@ -8,7 +8,7 @@ include "kop.php";
 <p>Een 'string' is een stuk tekst die geprint moet worden of die de inhoud van een (tekst) variabele is. Strings staan altijd tussen enkele of dubbele aanhalingstekens. Het commando . (de punt dus) wordt gebruikt om twee strings samen te voegen. Dit wordt 'concatenatie' genoemd. </p>
 
 
-<pre data-src="v3_strings.hph","php"><code class="language-php">
+<pre data-src="hph\v3_strings.hph","php"><code class="language-php">
 </code></pre>
 Dit is de output van bovenstaand programmatje:
 <br>

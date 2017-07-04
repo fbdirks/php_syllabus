@@ -10,7 +10,7 @@ include "kop.php";
 <p>Als de variabele $groet de inhoud heeft "Hallo!" dan zal het commando echo '$groet' de <b>naam</b> van de variabele ($groet) printen en zal echo "$groet" de <b>inhoud</b> van de variabele printen (Hallo!).</p>
 <p>Je kunt in beide gevallen html commando's mee printen (binnen de ' ' of " ") en deze zullen door de browser gewoon worden uitgevoerd.</p>
 <p>Uitkijken moet je met het gebruik van 'letterlijke' aanhalingstekens in datgene wat je printen wilt. Als je bijvoorbeeld wilt printen: Hij zei "mevrouw" tegen mij!! dan <b>moet</b> je de aanhalingstekens die je 'letterlijk' wilt printen vooraf doen gaan van het teken \ . Dit teken zorgt ervoor dat PHP het teken daar onmiddelijk na niet als een PHP opdracht ziet ("einde van wat geprint moet worden"), maar als letterlijk teken. De \ wordt in dit geval een 'escape' opdracht genoemd. Helaas maken escapes de PHP code soms wat lastig te lezen. </p>
-<pre data-src="pagina2_vb.hph","php"><code class="language-php">
+<pre data-src="hph\pagina2_vb.hph","php"><code class="language-php">
 </code></pre>
 De output van deze code:
 <div class="voorbeeldOutput">

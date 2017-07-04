@@ -1,6 +1,6 @@
 <?php
 include "kop.php";
-include "disp_functies.php";
+
 ?>
 
 <h2>14. Ingesloten Functies</h2>
@@ -9,13 +9,13 @@ include "disp_functies.php";
 <p>In het bovenste voorbeeld zie je een php pagina die een andere php pagina (met de functies) binnenleest. Je ziet in de hoofdcode dat via de commando's <b>kop();</b> en <b>voet();</b> deze functies gestart worden. De inhoud van pagina_functies.php staat er onder.</p>
 
 
-<pre data-src="v14_include.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v14_include.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v14_include.php';?></div>
 
 
 <p>En dit is de file met de pagina functies:</p>
-<pre data-src="pagina_functies.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\pagina_functies.hph","php"><code class="language-php"></code></pre>
 
 
 <?php

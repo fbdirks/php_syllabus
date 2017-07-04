@@ -55,21 +55,20 @@ print "</pre>";
 <p>Als het geheugen niet meer nodig moet het worden uitgezet. Zeker bij inlogsystemen is het verstandig om daarbij twee dingen tegelijk te doen: (a) het geheugen bakje legen (met session_unset()) en (b) het bakje uitzetten (met session_destroy()). 
 <pre><code class="language-php">
 session_unset();
-session_destroy();';
+session_destroy();
 </code></pre>
 
-?>
+
 
 </p>
 
 
 <p>In het voorbeeld hieronder zet het eerste script de usernaam en de boolean 'ingelogd'.</p>
-<pre data-src="v17_sessies.hph","php"><code class="language-php"></code></pre>
-En de output:
-<div class="voorbeeldOutput"><?php include 'v17_sessies.php';?></div>
+<pre data-src="hph\v17_sessies.hph","php"><code class="language-php"></code></pre>
+
 
 <p>De tweede file controleert of er is ingelogd, zo ja, dan wordt er meteen uitgelogd. Dit is dus een soort php variant van de <a href="https://en.wikipedia.org/wiki/Useless_machine">'useless machine'</a>.</p>
-<pre data-src="v17_sessies2.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v17_sessies2.hph","php"><code class="language-php"></code></pre>
 
 
 <p>De conclusie mag zijn dat met het session systeem PHP op een eenvoudige manier voorzien kan worden van een sessie-geheugen. Bij serieuze toepassingen is het verstandig om alle security details rondom sessies te kennen en ervoor te zorgen dat sessie niet door anderen misbruikt kunnen worden. </p>

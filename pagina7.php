@@ -46,7 +46,7 @@ Je ziet dat je met AND (en OR en NOT) ook samengestelde voorwaarden kunt gebruik
 </p>
 <p>Een <b>Codeblok</b> wordt door PHP altijd afgegrensd door {  en } . Daarbinnen kan 1 commando staan, maar ook 2000 commando's!</p>
 <!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
-<pre data-src="v7_ifthen.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v7_ifthen.hph","php"><code class="language-php"></code></pre>
 Dit is de output van deze code:<br><br>
 <div class="voorbeeldOutput" >
 <?php include "v7_ifthen.php"; ?>

@@ -4,7 +4,7 @@ include "disp_functies.php";
 
 ?>
 
-<h2>Voor- en nadelen van OOP</h2>
+<h2>26. Voor- en nadelen van OOP</h2>
 <p>Hoe nuttig is OOP? Iemand die 'even gauw' een applicatie moet schrijven voor een klein probleem heeft niets aan OOP. OOP heeft alleen zin als je een informatie probleem drastisch en grondig op wilt lossen. Je zult bij OOP in de aanlooptijd naar een werkende applicatie altijd veel tijd moeten stoppen in het nadenken over de architectuur van je objecten.
 De zaak ligt echter anders als je bij een applicatie gebruik wilt maken van werk dat anderen al gedaan hebben. Gebruik maken van klasse definities van anderen is in OOP een fluitje van een cent. En als die klasse definities een beetje volledig en goed gerijpt zijn neemt dat je een hoop werk uit handen. Het is altijd weer opvallend hoe de programma code die via events objecten met elkaar verknoopt in OOP-programma's soms verrassend simpel en overzichtelijk oogt. Dat soort programma's schrijf je snel en je kunt er ook snel de fouten uit halen.</p>
 

@@ -11,7 +11,7 @@ include "disp_functies.php";
 
 
 <!-- Geef de php file geen php extensie als dit in een php pagina geintegreerd wordt -->
-<pre data-src="v8_switch.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v8_switch.hph","php"><code class="language-php"></code></pre>
 Dit is de output van deze code:<br><br>
 <div class="voorbeeldOutput" >
 

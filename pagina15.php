@@ -133,7 +133,7 @@ include "disp_functies.php";
 	</table>
 
   <p>Dit is de simpele file die rapporteert hoe het bovenstaande formulier is ingevuld. Onthou dat print_r je beste vriend is als het gaat om het bekijken van de return waarden van een formulier.</p>
-<pre data-src="v15_forms.hph","php"><code class="language-php"></code></pre>
+<pre data-src="hph\v15_forms.hph","php"><code class="language-php"></code></pre>
 En de output:
 <div class="voorbeeldOutput"><?php include 'v15_forms.php';?></div>
 

@@ -7,9 +7,10 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   
-<script src="../prism/prism-coy.js"></script>
-<script src="../clip/clipboard.min.js"></script>
+<script src="/_lib/prism/prism-coy.js"></script>
+<script src="/_lib/clip/clipboard.min.js"></script>
 <script src="functies.js"></script>
+<script src="/_lib/bootstrap/js/bootstrap.min.js"></script>
 <script>
 $( document ).ready(function(){
   kop();
