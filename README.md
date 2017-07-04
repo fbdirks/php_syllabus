@@ -9,10 +9,12 @@ Het is een 'werk in uitvoering' die ik ook gebruik om mijn eigen programmeerskil
 
 Werkbaar krijgen:
 * in de webserver moet op het hoogste niveau een directory _lib bestaan waarin:
+
 - bootstrap
 - jquery
 - prism (syntax highlighter)
 - clip (een js clip lib)
+
 Voor aanpassing van padnamen zie functie.js, kop.php en voet.php
 
 
