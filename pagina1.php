@@ -22,7 +22,15 @@ include "disp_functies.php";
 <p>De webserver zal na <b>&lt;?php</b> php aan het werk zetten met de programmaregels die duren tot de eerstvolgende <b>?&gt;</b>. Buiten dat blok mag html code staan. Je kunt in een php pagina php en html zo vaak als je maar wilt mixen.</p>
 
 <pre data-src="hph\v1b_skelet.hph"><code class="language-php"></code></pre>
-
+<div class="vragen">
+	<p class="vraag" id="v1">
+	1. Waarom kun je niet vanuit de windows verkenner een php file aanklikken om hem uit te voeren?	
+	</p>
+	<p class="antwoord" id="a1">
+	1. Omdat php files door een webserver en niet door windows uitgevoerd moeten worden. 	
+	</p>
+	
+</div>
 
 
 

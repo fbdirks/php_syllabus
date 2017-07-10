@@ -37,7 +37,13 @@ include "disp_functies.php";
 	</p>
 <p>De <b>voorwaarde</b> mag iedere vergelijking of variabele zijn die of een true (1) of een false(al het andere) oplevert. Dus bijvoorbeeld:
 <ul>
-	<li>($getal1 < $getal2)</li>
+	<li><?php 
+		$getal1 = 10;
+		$getal2 = 18;
+		print "($getal1 < $getal2) : ";
+		print ($getal1 < $getal2);
+		print " [1 = True, iedere andere waarde = False]";
+		?></li>
 	<li>($inlognaam=="Jan")</li>
 	<li>(($snelheid>=80) AND ($snelheid<100))</li>
 	<li>($ingelogd)   # als $ingelogd de waarde 1 heeft bijvoorbeeld</li>

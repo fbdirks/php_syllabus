@@ -27,10 +27,10 @@ function kop() {
 	} 
 	
 	
-  var logo = "php2.jpg";
+  var logo = "php2.gif";
   var kopTekst = "<img src=\"" + logo + "\" />"+ " &nbsp;&nbsp;&nbsp;<i>aantekeningen</i>";
 
-  var knops = "<br><br><span style=\"text-align: right\" title=\"vorige pagina\"><a href=\"" + vorigePagina + "\"><span class=\"glyphicon glyphicon-arrow-left\"></span></a>";
+  var knops = "<br><span style=\"text-align: right\" title=\"vorige pagina\"><a href=\"" + vorigePagina + "\"><span class=\"glyphicon glyphicon-arrow-left\"></span></a>";
   knops += " <a href=\"index.php\" title=\"Index\"><span class=\"glyphicon glyphicon-arrow-up\"></span></a> ";
   knops += "<a href=\""+ volgendePagina + "\" title=\"volgende pagina\"><span class=\"glyphicon glyphicon-arrow-right\"></span></a></span>";
   kopTekst += knops;
