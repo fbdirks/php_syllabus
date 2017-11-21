@@ -1,17 +1,16 @@
 <?php
 
 include "kop.php";
-print "<table align=\"center\" width=\"75%\">";
-print "<tr><td>";
-print "<div align=\"left\">";
-print "<h3 align=\"center\">PHP Syllabus.</h3><br/>";
-print "Op deze pagina's worden de belangrijkste basiselementen van PHP programmeren besproken.";
-print "De links verwijzen naar uitleg pagina's. Het getal met het paragraafnummer verwijst naar het nummer van de unit";
-print " in CodeAcademy waar het interactieve lesmateriaal staat. &sect;X betekent dat CodeAcademy de stof niet behandelt.";
-print "</div>";
-print "</td></tr></table>";
-print "<hr>";
-//print "<form action=\"".$_SERVER['PHP_SELF']."\" method=\"post\">";
+
+?>
+<div class="introtekst">
+<h1 class="introtitel">PHP Syllabus.</h1>
+<p>Op deze pagina's worden de belangrijkste basiselementen van PHP programmeren besproken. De links verwijzen naar uitleg pagina's. Het getal met het paragraafnummer verwijst naar het nummer van de unit in CodeAcademy waar het interactieve lesmateriaal staat. &sect;X betekent dat CodeAcademy de stof niet behandelt.</p>
+
+<hr>
+</div>
+<?php
+// De inhoudsopgave staat in een tabel. TODO: anders oplossen??
 print "<table align=\"center\">";
 // inlezen bestand
 $file="scripts_voorbeelden.txt";
@@ -43,7 +42,7 @@ for ($i=1; $i<=$ln; $i++) {
 		$niks = 0;
 	} else {
 		//print "<tr><td>";
-		print "<tr><td style=\"text-align: right\">$i. </td>";
+		print "<tr><td style=\"text-align: right\">$i.&nbsp; </td>";
 		print "<td><a href=\"$bestandsnaam\" >$omschrijving</a>";
 		print "</td><td>(<i>&sect;$paragraaf</i>)";
 		//print "</td><td>$omschrijving";
